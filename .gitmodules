@@ -1,0 +1,3 @@
+[submodule "dependencies/optional"]
+	path = dependencies/optional
+	url = https://github.com/rharel/csharp-optional.git
