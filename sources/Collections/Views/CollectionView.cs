@@ -118,6 +118,6 @@ namespace rharel.M3PD.Common.Collections
         /// <summary>
         /// Gets the observed collection.
         /// </summary>
-        protected ICollection<T> Collection { get; private set; }
+        protected ICollection<T> Collection { get; }
     }
 }
