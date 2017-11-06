@@ -44,6 +44,7 @@
     <Compile Include="Collections\Extensions\ImmutableCollectionExtensions.cs" />
     <Compile Include="Collections\Interfaces\ImmutableCollection.cs" />
     <Compile Include="Collections\Interfaces\ImmutableList.cs" />
+    <Compile Include="Collections\Pair.cs" />
     <Compile Include="Collections\Views\CollectionView.cs" />
     <Compile Include="Collections\Views\ListView.cs" />
     <Compile Include="Delegates\EventHandlers.cs" />

@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Collections\Extensions\ImmutableCollectionExtensionsTest.cs" />
+    <Compile Include="Collections\PairTest.cs" />
     <Compile Include="Collections\Views\CollectionViewTest.cs" />
     <Compile Include="Collections\Views\ListViewTest.cs" />
     <Compile Include="DesignPatterns\ObjectBuilderTest.cs" />
