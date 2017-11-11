@@ -1,5 +1,6 @@
 ﻿using rharel.Functional;
 using System;
+using static rharel.Functional.Option;
 
 namespace rharel.M3PD.Common.DesignPatterns
 {
@@ -16,7 +17,7 @@ namespace rharel.M3PD.Common.DesignPatterns
         /// <summary>
         /// Gets the built object.
         /// </summary>
-        public Optional<T> Object { get; private set; } = new None<T>();
+        public Optional<T> Object { get; private set; } = None<T>();
 
         /// <summary>
         /// Builds the object.
@@ -34,7 +35,7 @@ namespace rharel.M3PD.Common.DesignPatterns
                 );
             }
 
-            Object = new Some<T>(CreateObject());
+            Object = Some(CreateObject());
             IsBuilt = true;
 
             return Object.Unwrap();
