@@ -11,7 +11,7 @@ namespace rharel.M3PD.Common.Collections
     /// <see cref="Pair{T}"/> and <see cref="Pair{TFirst, TSecond}"/> for the 
     /// generic versions.
     /// </remarks>
-    public interface Pair: IEnumerable
+    internal interface Pair: IEnumerable
     {
         /// <summary>
         /// Gets the first item.
