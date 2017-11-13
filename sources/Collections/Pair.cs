@@ -10,7 +10,7 @@ namespace rharel.M3PD.Common.Collections
     /// <remarks>
     /// See <see cref="Pair{T}"/> for the generic versions.
     /// </remarks>
-    internal interface Pair: IEnumerable
+    internal interface ObjectPair: IEnumerable
     {
         /// <summary>
         /// Gets the first item.
@@ -26,9 +26,9 @@ namespace rharel.M3PD.Common.Collections
     /// </summary>
     /// <typeparam name="T">The type of contained items.</typeparam>
     /// <remarks>
-    /// See <see cref="Pair"/> for the non-generic version.
+    /// See <see cref="ObjectPair"/> for the non-generic version.
     /// </remarks>
-    public struct Pair<T> : Pair, IEnumerable<T>
+    public struct Pair<T> : ObjectPair, IEnumerable<T>
     {
         /// <summary>
         /// Creates a new pair.
@@ -53,11 +53,11 @@ namespace rharel.M3PD.Common.Collections
         /// <summary>
         /// Gets the first item.
         /// </summary>
-        object Pair.First => First;
+        object ObjectPair.First => First;
         /// <summary>
         /// Gets the second item.
         /// </summary>
-        object Pair.Second => Second;
+        object ObjectPair.Second => Second;
 
         /// <summary>
         /// Gets a generic enumerator over items.
@@ -86,7 +86,7 @@ namespace rharel.M3PD.Common.Collections
         /// </returns>
         public override bool Equals(object obj)
         {
-            if (obj is Pair other)
+            if (obj is ObjectPair other)
             {
                 if (other.First is T other_first &&
                     other.Second is T other_second)
